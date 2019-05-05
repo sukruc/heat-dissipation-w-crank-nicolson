@@ -3,9 +3,7 @@ import matplotlib.pyplot as plt
 import pickle
 import sys
 
-from heat_utils import initialize, calculate, propagate
-del sys.modules['heat_utils']
-from heat_utils import initialize, calculate, propagate
+from heatutils import initialize, calculate, propagate
 
 MAT_FILENAME = 'T_step02s_2.pk'
 
