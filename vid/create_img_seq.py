@@ -17,3 +17,16 @@ for i in range(T.shape[2]-1):
     heatmap(X, Y, T, dx, dt, time_elapsed=i, ax=ax)
     fig.savefig(f'img_seq/img_{i:04d}')
     plt.close('all')
+
+os.system('echo %USERNAME%')
+
+a = 1
+f'{a:04d}'
+
+import os
+for filename,seq in zip(os.listdir('img_seq'), range(10)):
+    os.system(f'ren img_seq/{filename} {seq:04d}.png')
+
+os.system('ren img_seq/img_0001.png 0001.png')
+!ren img_seq/img_0001.png img_seq/0001.png
+pwd
